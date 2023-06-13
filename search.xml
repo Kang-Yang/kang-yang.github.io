@@ -4,23 +4,23 @@
   
     
     <entry>
-      <title>hexo如何推送到github</title>
-      <link href="/2023/06/12/hexo-ru-he-tui-song-dao-github/"/>
-      <url>/2023/06/12/hexo-ru-he-tui-song-dao-github/</url>
+      <title>Hexo如何推送到GitHub</title>
+      <link href="/2023/06/13/hexo-ru-he-tui-song-dao-github/"/>
+      <url>/2023/06/13/hexo-ru-he-tui-song-dao-github/</url>
       
-        <content type="html"><![CDATA[<h1 id="11111"><a href="#11111" class="headerlink" title="11111"></a>11111</h1><h2 id="阿是哈啥"><a href="#阿是哈啥" class="headerlink" title="阿是哈啥"></a>阿是哈啥</h2><h2 id="1、22222"><a href="#1、22222" class="headerlink" title="1、22222"></a>1、22222</h2><h3 id="2、3333"><a href="#2、3333" class="headerlink" title="2、3333"></a>2、3333</h3>]]></content>
+        <content type="html"><![CDATA[<h2 id="1、清除缓存"><a href="#1、清除缓存" class="headerlink" title="1、清除缓存"></a>1、清除缓存</h2><pre class="line-numbers language-shell"><code class="language-shell">hexo clean<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ul><li>执行该命令后，会删除根目录下生成的public目录。</li></ul><h2 id="2、生成静态页"><a href="#2、生成静态页" class="headerlink" title="2、生成静态页"></a>2、生成静态页</h2><pre class="line-numbers language-shell"><code class="language-shell">hexo g<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ul><li>静态页面生成后默认会在项目目录下的public目录中，因为是静态页面，我们可以手动拿去部署在nginx等静态资源服务器上。</li></ul><h2 id="3、发布到GitHub"><a href="#3、发布到GitHub" class="headerlink" title="3、发布到GitHub"></a>3、发布到GitHub</h2><pre class="line-numbers language-shell"><code class="language-shell">hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ul><li>会推送项目目录下的public文件夹至GitHub仓库中。</li></ul>]]></content>
       
       
       <categories>
           
-          <category> hexo </category>
+          <category> Hexo </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> hexo </tag>
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -33,7 +33,7 @@
       <link href="/2023/06/12/test/"/>
       <url>/2023/06/12/test/</url>
       
-        <content type="html"><![CDATA[<h2 id="一、创建文章"><a href="#一、创建文章" class="headerlink" title="一、创建文章"></a>一、创建文章</h2><p>打开建立的hexo文件，<code>windows</code>右击git bash，<code>macos/linux</code>终端进入文件位置。输入如下：其中<code>title</code>为文章的标题。</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;title&quot;</span><br></pre></td></tr></table></figure><p>输入后，hexo会根据目录下<code>scaffolds/post.md</code>，在<code>source/_posts</code> 文件夹下创建一个文件，名为:<code>title.md</code></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="一、创建文章"><a href="#一、创建文章" class="headerlink" title="一、创建文章"></a>一、创建文章</h2><p>打开建立的hexo文件，<code>windows</code>右击git bash，<code>macos/linux</code>终端进入文件位置。输入如下：其中<code>title</code>为文章的标题。</p><pre class="line-numbers language-text"><code class="language-text">hexo new "title"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>输入后，hexo会根据目录下<code>scaffolds/post.md</code>，在<code>source/_posts</code> 文件夹下创建一个文件，名为:<code>title.md</code></p>]]></content>
       
       
       
