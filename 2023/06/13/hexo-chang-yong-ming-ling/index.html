@@ -4,11 +4,16 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="test, Kang-Blog">
-    <meta name="description" content="一、创建文章打开建立的hexo文件，windows右击git bash，macos/linux终端进入文件位置。输入如下：其中title为文章的标题。
-hexo new &#34;title&#34;
+    <meta name="keywords" content="Hexo常用命令, Kang-Blog">
+    <meta name="description" content="创建新的布局
+如果没有指定布局类型，则为默认布局post，可以在 scaffolds 目录下新增布局
 
-输入后，hexo会根据目录下scaffolds/po">
+假设新增的布局文件名为 test.md 
+
+创建文件指定布局的命令 hexo new test “新增文章”
+
+
+美化代码块参考该文档：">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +25,7 @@ hexo new &#34;title&#34;
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>test | Kang-Blog</title>
+    <title>Hexo常用命令 | Kang-Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -275,7 +280,7 @@ hexo new &#34;title&#34;
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824';
+        let pwd = '';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -288,12 +293,12 @@ hexo new &#34;title&#34;
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">test</h1>
+                    <h1 class="description center-align post-title">Hexo常用命令</h1>
                 </div>
             </div>
         </div>
@@ -317,9 +322,9 @@ hexo new &#34;title&#34;
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/test/">
+                                <a href="/tags/Hexo/">
                                     <span class="chip bg-color">
-                                        test
+                                        Hexo
                                     </span>
                                 </a>
                                 
@@ -328,6 +333,15 @@ hexo new &#34;title&#34;
                 </div>
                 <div class="col s5 right-align">
                     
+                        <div class="post-cate">
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                                <a href="/categories/Hexo/" class="post-category">
+                                    Hexo
+                                </a>
+                                
+                        </div>
+                        
                 </div>
             </div>
 
@@ -335,21 +349,21 @@ hexo new &#34;title&#34;
                 
                     <div class="post-date info-break-policy">
                         <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                            2023-06-12
+                            2023-06-13
                     </div>
                     
 
                         
                             <div class="post-date info-break-policy">
                                 <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                                    2023-06-12
+                                    2023-06-13
                             </div>
                             
 
                                 
                                     <div class="info-break-policy">
                                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                                            72
+                                            98
                                     </div>
                                     
 
@@ -377,10 +391,16 @@ hexo new &#34;title&#34;
 
                         <div class="card-content article-card-content">
                             <div id="articleContent">
-                                <h2 id="一、创建文章"><a href="#一、创建文章" class="headerlink" title="一、创建文章"></a>一、创建文章</h2><p>打开建立的hexo文件，<code>windows</code>右击git bash，<code>macos/linux</code>终端进入文件位置。输入如下：其中<code>title</code>为文章的标题。</p>
-<pre class="line-numbers language-text"><code class="language-text">hexo new "title"
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>输入后，hexo会根据目录下<code>scaffolds/post.md</code>，在<code>source/_posts</code> 文件夹下创建一个文件，名为:<code>title.md</code></p>
+                                <h2 id="创建新的布局"><a href="#创建新的布局" class="headerlink" title="创建新的布局"></a>创建新的布局</h2><ul>
+<li><p>如果没有指定布局类型，则为默认布局post，可以在 scaffolds 目录下新增布局</p>
+</li>
+<li><p>假设新增的布局文件名为 test.md </p>
+</li>
+<li><p>创建文件指定布局的命令 hexo new test “新增文章”</p>
+</li>
+</ul>
+<h2 id="美化代码块"><a href="#美化代码块" class="headerlink" title="美化代码块"></a>美化代码块</h2><p>参考该文档：<a target="_blank" rel="noopener" href="http://www.luckysec.cn/posts/1b9a9e28.html#toc-heading-9">Matery之代码块优化 | LuckySec</a></p>
+<h2 id="在线sha256加密网址"><a href="#在线sha256加密网址" class="headerlink" title="在线sha256加密网址"></a>在线sha256加密网址</h2><p><a target="_blank" rel="noopener" href="https://tool.oschina.net/encrypt?type=2">在线加密解密 (oschina.net)</a></p>
 
                                     
                             </div>
@@ -407,7 +427,7 @@ hexo new &#34;title&#34;
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://kang-yang.github.io/2023/06/12/test/">https://kang-yang.github.io/2023/06/12/test/</a>
+                    <a href="https://kang-yang.github.io/2023/06/13/hexo-chang-yong-ming-ling/">https://kang-yang.github.io/2023/06/13/hexo-chang-yong-ming-ling/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -445,9 +465,9 @@ hexo new &#34;title&#34;
                                         
                                             <div class="article-tag">
                                                 
-                                                    <a href="/tags/test/">
+                                                    <a href="/tags/Hexo/">
                                                         <span class="chip bg-color">
-                                                            test
+                                                            Hexo
                                                         </span>
                                                     </a>
                                                     
@@ -533,13 +553,13 @@ hexo new &#34;title&#34;
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/06/13/hexo-ru-he-tui-song-dao-github/">
+                <a href="/2023/06/13/shi-yong-git-dan-du-wei-zhi-ding-xiang-mu-she-zhi-yong-hu-ming-he-mi-ma/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Hexo如何推送到GitHub">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="使用Git单独为指定项目设置用户名和密码">
                         
-                        <span class="card-title">Hexo如何推送到GitHub</span>
+                        <span class="card-title">使用Git单独为指定项目设置用户名和密码</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -552,6 +572,55 @@ hexo new &#34;title&#34;
                         <span class="publish-date">
                             <i class="far fa-clock fa-fw icon-date"></i>2023-06-13
                         </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/git/" class="post-category">
+                                    git
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/git/">
+                        <span class="chip bg-color">git</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/06/13/ru-he-tui-song-hexo-dao-github/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="如何推送Hexo到GitHub">
+                        
+                        <span class="card-title">如何推送Hexo到GitHub</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-13
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -569,55 +638,6 @@ hexo new &#34;title&#34;
                     
                     <a href="/tags/Hexo/">
                         <span class="chip bg-color">Hexo</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2023/06/07/di-yi-pian-hexo-blog-wen-zhang/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="第一篇Hexo blog11111111111111111111111111111111111111文章">
-                        
-                        <span class="card-title">第一篇Hexo blog11111111111111111111111111111111111111文章</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-07
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/blog/" class="post-category">
-                                    blog
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/hello/">
-                        <span class="chip bg-color">hello</span>
                     </a>
                     
                 </div>
@@ -757,7 +777,7 @@ hexo new &#34;title&#34;
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">240</span>
+                        class="white-color">305</span>
             
             
             
