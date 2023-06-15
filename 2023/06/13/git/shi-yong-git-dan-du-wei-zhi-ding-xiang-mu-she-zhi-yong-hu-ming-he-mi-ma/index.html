@@ -4,16 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="如何推送Hexo到GitHub, Kang-Blog">
-    <meta name="description" content="1、清除缓存hexo clean
+    <meta name="keywords" content="使用Git单独为指定项目设置用户名和密码, Kang-Blog">
+    <meta name="description" content="1、找到项目中 .git文件夹进入.git文件夹
+2、查看该项目的 git 配置cat config
 
-
-执行该命令后，会删除根目录下生成的public目录。
-
-2、生成静态页hexo g
-
-
-静态页面生成后默认会在项目目录下的public目录中，因为是静态页面，我们可以手动拿去部署在nginx等静态资源服">
+3、为该项目设置用户名和邮箱git config user.name ‘你的账号名’
+git config user.email ‘你的">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -25,7 +21,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>如何推送Hexo到GitHub | Kang-Blog</title>
+    <title>使用Git单独为指定项目设置用户名和密码 | Kang-Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -291,12 +287,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">如何推送Hexo到GitHub</h1>
+                    <h1 class="description center-align post-title">使用Git单独为指定项目设置用户名和密码</h1>
                 </div>
             </div>
         </div>
@@ -320,9 +316,9 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Hexo/">
+                                <a href="/tags/Git/">
                                     <span class="chip bg-color">
-                                        Hexo
+                                        Git
                                     </span>
                                 </a>
                                 
@@ -334,8 +330,8 @@
                         <div class="post-cate">
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                                <a href="/categories/Hexo/" class="post-category">
-                                    Hexo
+                                <a href="/categories/Git/" class="post-category">
+                                    Git
                                 </a>
                                 
                         </div>
@@ -354,14 +350,14 @@
                         
                             <div class="post-date info-break-policy">
                                 <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                                    2023-06-13
+                                    2023-06-14
                             </div>
                             
 
                                 
                                     <div class="info-break-policy">
                                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                                            106
+                                            101
                                     </div>
                                     
 
@@ -389,21 +385,15 @@
 
                         <div class="card-content article-card-content">
                             <div id="articleContent">
-                                <h2 id="1、清除缓存"><a href="#1、清除缓存" class="headerlink" title="1、清除缓存"></a>1、清除缓存</h2><pre class="line-numbers language-shell"><code class="language-shell">hexo clean
+                                <h2 id="1、找到项目中-git文件夹"><a href="#1、找到项目中-git文件夹" class="headerlink" title="1、找到项目中 .git文件夹"></a>1、找到项目中 .git文件夹</h2><p>进入.git文件夹</p>
+<h2 id="2、查看该项目的-git-配置"><a href="#2、查看该项目的-git-配置" class="headerlink" title="2、查看该项目的 git 配置"></a>2、查看该项目的 git 配置</h2><pre class="line-numbers language-shell"><code class="language-shell">cat config
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<ul>
-<li>执行该命令后，会删除根目录下生成的public目录。</li>
-</ul>
-<h2 id="2、生成静态页"><a href="#2、生成静态页" class="headerlink" title="2、生成静态页"></a>2、生成静态页</h2><pre class="line-numbers language-shell"><code class="language-shell">hexo g
+<h2 id="3、为该项目设置用户名和邮箱"><a href="#3、为该项目设置用户名和邮箱" class="headerlink" title="3、为该项目设置用户名和邮箱"></a>3、为该项目设置用户名和邮箱</h2><pre class="line-numbers language-shell"><code class="language-shell">git config user.name ‘你的账号名’
+git config user.email ‘你的邮箱’
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h2 id="4、查看配置是否生效"><a href="#4、查看配置是否生效" class="headerlink" title="4、查看配置是否生效"></a>4、查看配置是否生效</h2><pre class="line-numbers language-shell"><code class="language-shell">cat config
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<ul>
-<li>静态页面生成后默认会在项目目录下的public目录中，因为是静态页面，我们可以手动拿去部署在nginx等静态资源服务器上。</li>
-</ul>
-<h2 id="3、发布到GitHub"><a href="#3、发布到GitHub" class="headerlink" title="3、发布到GitHub"></a>3、发布到GitHub</h2><pre class="line-numbers language-shell"><code class="language-shell">hexo d
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<ul>
-<li>会推送项目目录下的public文件夹至GitHub仓库中。</li>
-</ul>
+<p>参考文档：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_39788999/article/details/106965509">(20条消息) 使用git单独为指定项目设置用户名和密码_weixin_39788999的博客-CSDN博客</a></p>
 
                                     
                             </div>
@@ -430,7 +420,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://kang-yang.github.io/2023/06/13/ru-he-tui-song-hexo-dao-github/">https://kang-yang.github.io/2023/06/13/ru-he-tui-song-hexo-dao-github/</a>
+                    <a href="https://kang-yang.github.io/2023/06/13/git/shi-yong-git-dan-du-wei-zhi-ding-xiang-mu-she-zhi-yong-hu-ming-he-mi-ma/">https://kang-yang.github.io/2023/06/13/git/shi-yong-git-dan-du-wei-zhi-ding-xiang-mu-she-zhi-yong-hu-ming-he-mi-ma/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -468,9 +458,9 @@
                                         
                                             <div class="article-tag">
                                                 
-                                                    <a href="/tags/Hexo/">
+                                                    <a href="/tags/Git/">
                                                         <span class="chip bg-color">
-                                                            Hexo
+                                                            Git
                                                         </span>
                                                     </a>
                                                     
@@ -518,13 +508,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/06/13/hexo-chang-yong-ming-ling/">
+                <a href="/2023/06/14/da-jian-mian-fei-tu-chuang/shi-yong-gitee-picgo-typora-da-jian-mian-fei-de-markdown-tu-chuang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Hexo常用命令">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="使用Gitee+PicGo+Typora搭建免费的Markdown图床">
                         
-                        <span class="card-title">Hexo常用命令</span>
+                        <span class="card-title">使用Gitee+PicGo+Typora搭建免费的Markdown图床</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -535,14 +525,14 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-06-13
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-06-14
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Hexo/" class="post-category">
-                                    Hexo
+                            <a href="/categories/%E5%9B%BE%E5%BA%8A/" class="post-category">
+                                    图床
                                 </a>
                             
                             
@@ -552,8 +542,16 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
+                    <a href="/tags/Gitee/">
+                        <span class="chip bg-color">Gitee</span>
+                    </a>
+                    
+                    <a href="/tags/Typora/">
+                        <span class="chip bg-color">Typora</span>
+                    </a>
+                    
+                    <a href="/tags/PicGo/">
+                        <span class="chip bg-color">PicGo</span>
                     </a>
                     
                 </div>
@@ -564,16 +562,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/06/13/ru-he-tui-song-hexo-dao-github/">
+                <a href="/2023/06/13/hexo/hexo-chang-yong-ming-ling/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="如何推送Hexo到GitHub">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Hexo常用命令">
                         
-                        <span class="card-title">如何推送Hexo到GitHub</span>
+                        <span class="card-title">Hexo常用命令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -598,7 +596,6 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -743,7 +740,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">305</span>
+                        class="white-color">415</span>
             
             
             

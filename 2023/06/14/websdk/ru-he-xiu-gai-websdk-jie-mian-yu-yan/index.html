@@ -4,12 +4,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="使用Git单独为指定项目设置用户名和密码, Kang-Blog">
-    <meta name="description" content="1、找到项目中 .git文件夹进入.git文件夹
-2、查看该项目的 git 配置cat config
+    <meta name="keywords" content="如何修改WebSDK界面语言, Kang-Blog">
+    <meta name="description" content="1、第一种方式（动态切换语言，比较简单）//设置UI界面语言
+//默认寻找的是路径是 \lib\locales
+pdfui.changeLanguage(&#34;zh-CN&#34;);
 
-3、为该项目设置用户名和邮箱git config user.name ‘你的账号名’
-git config user.email ‘你的">
+2、第二种方式i18n: &amp;amp;#123;
+    lng:">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +22,7 @@ git config user.email ‘你的">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>使用Git单独为指定项目设置用户名和密码 | Kang-Blog</title>
+    <title>如何修改WebSDK界面语言 | Kang-Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -287,12 +288,12 @@ git config user.email ‘你的">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">使用Git单独为指定项目设置用户名和密码</h1>
+                    <h1 class="description center-align post-title">如何修改WebSDK界面语言</h1>
                 </div>
             </div>
         </div>
@@ -316,9 +317,9 @@ git config user.email ‘你的">
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/git/">
+                                <a href="/tags/WebSDK/">
                                     <span class="chip bg-color">
-                                        git
+                                        WebSDK
                                     </span>
                                 </a>
                                 
@@ -330,8 +331,8 @@ git config user.email ‘你的">
                         <div class="post-cate">
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                                <a href="/categories/git/" class="post-category">
-                                    git
+                                <a href="/categories/WebSDK/" class="post-category">
+                                    WebSDK
                                 </a>
                                 
                         </div>
@@ -343,21 +344,21 @@ git config user.email ‘你的">
                 
                     <div class="post-date info-break-policy">
                         <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                            2023-06-13
+                            2023-06-14
                     </div>
                     
 
                         
                             <div class="post-date info-break-policy">
                                 <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                                    2023-06-13
+                                    2023-06-14
                             </div>
                             
 
                                 
                                     <div class="info-break-policy">
                                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                                            101
+                                            60
                                     </div>
                                     
 
@@ -385,15 +386,16 @@ git config user.email ‘你的">
 
                         <div class="card-content article-card-content">
                             <div id="articleContent">
-                                <h2 id="1、找到项目中-git文件夹"><a href="#1、找到项目中-git文件夹" class="headerlink" title="1、找到项目中 .git文件夹"></a>1、找到项目中 .git文件夹</h2><p>进入.git文件夹</p>
-<h2 id="2、查看该项目的-git-配置"><a href="#2、查看该项目的-git-配置" class="headerlink" title="2、查看该项目的 git 配置"></a>2、查看该项目的 git 配置</h2><pre class="line-numbers language-shell"><code class="language-shell">cat config
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="3、为该项目设置用户名和邮箱"><a href="#3、为该项目设置用户名和邮箱" class="headerlink" title="3、为该项目设置用户名和邮箱"></a>3、为该项目设置用户名和邮箱</h2><pre class="line-numbers language-shell"><code class="language-shell">git config user.name ‘你的账号名’
-git config user.email ‘你的邮箱’
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h2 id="4、查看配置是否生效"><a href="#4、查看配置是否生效" class="headerlink" title="4、查看配置是否生效"></a>4、查看配置是否生效</h2><pre class="line-numbers language-shell"><code class="language-shell">cat config
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>参考文档：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_39788999/article/details/106965509">(20条消息) 使用git单独为指定项目设置用户名和密码_weixin_39788999的博客-CSDN博客</a></p>
+                                <h3 id="1、第一种方式（动态切换语言，比较简单）"><a href="#1、第一种方式（动态切换语言，比较简单）" class="headerlink" title="1、第一种方式（动态切换语言，比较简单）"></a>1、第一种方式（动态切换语言，比较简单）</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">//设置UI界面语言</span>
+<span class="token comment" spellcheck="true">//默认寻找的是路径是 \lib\locales</span>
+pdfui<span class="token punctuation">.</span><span class="token function">changeLanguage</span><span class="token punctuation">(</span><span class="token string">"zh-CN"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="2、第二种方式"><a href="#2、第二种方式" class="headerlink" title="2、第二种方式"></a>2、第二种方式</h3><pre class="line-numbers language-javascript"><code class="language-javascript">i18n<span class="token punctuation">:</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    lng<span class="token punctuation">:</span> <span class="token string">'zh-CN'</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>代码示例截图如下：</p>
+<img src="/2023/06/14/websdk/ru-he-xiu-gai-websdk-jie-mian-yu-yan/image-20230614220009693.png" class="" title="image-20230614220009693">
 
                                     
                             </div>
@@ -420,7 +422,7 @@ git config user.email ‘你的邮箱’
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://kang-yang.github.io/2023/06/13/shi-yong-git-dan-du-wei-zhi-ding-xiang-mu-she-zhi-yong-hu-ming-he-mi-ma/">https://kang-yang.github.io/2023/06/13/shi-yong-git-dan-du-wei-zhi-ding-xiang-mu-she-zhi-yong-hu-ming-he-mi-ma/</a>
+                    <a href="https://kang-yang.github.io/2023/06/14/websdk/ru-he-xiu-gai-websdk-jie-mian-yu-yan/">https://kang-yang.github.io/2023/06/14/websdk/ru-he-xiu-gai-websdk-jie-mian-yu-yan/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -458,9 +460,9 @@ git config user.email ‘你的邮箱’
                                         
                                             <div class="article-tag">
                                                 
-                                                    <a href="/tags/git/">
+                                                    <a href="/tags/WebSDK/">
                                                         <span class="chip bg-color">
-                                                            git
+                                                            WebSDK
                                                         </span>
                                                     </a>
                                                     
@@ -509,13 +511,13 @@ git config user.email ‘你的邮箱’
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2023/06/13/shi-yong-git-dan-du-wei-zhi-ding-xiang-mu-she-zhi-yong-hu-ming-he-mi-ma/">
+                <a href="/2023/06/14/websdk/ru-he-xiu-gai-websdk-jie-mian-yu-yan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="使用Git单独为指定项目设置用户名和密码">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="如何修改WebSDK界面语言">
                         
-                        <span class="card-title">使用Git单独为指定项目设置用户名和密码</span>
+                        <span class="card-title">如何修改WebSDK界面语言</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -526,14 +528,14 @@ git config user.email ‘你的邮箱’
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-13
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-14
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/git/" class="post-category">
-                                    git
+                            <a href="/categories/WebSDK/" class="post-category">
+                                    WebSDK
                                 </a>
                             
                             
@@ -544,8 +546,8 @@ git config user.email ‘你的邮箱’
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/git/">
-                        <span class="chip bg-color">git</span>
+                    <a href="/tags/WebSDK/">
+                        <span class="chip bg-color">WebSDK</span>
                     </a>
                     
                 </div>
@@ -559,13 +561,13 @@ git config user.email ‘你的邮箱’
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/06/13/hexo-chang-yong-ming-ling/">
+                <a href="/2023/06/14/da-jian-mian-fei-tu-chuang/shi-yong-gitee-picgo-typora-da-jian-mian-fei-de-markdown-tu-chuang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Hexo常用命令">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="使用Gitee+PicGo+Typora搭建免费的Markdown图床">
                         
-                        <span class="card-title">Hexo常用命令</span>
+                        <span class="card-title">使用Gitee+PicGo+Typora搭建免费的Markdown图床</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -576,14 +578,14 @@ git config user.email ‘你的邮箱’
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-13
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-14
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Hexo/" class="post-category">
-                                    Hexo
+                            <a href="/categories/%E5%9B%BE%E5%BA%8A/" class="post-category">
+                                    图床
                                 </a>
                             
                             
@@ -593,8 +595,16 @@ git config user.email ‘你的邮箱’
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
+                    <a href="/tags/Gitee/">
+                        <span class="chip bg-color">Gitee</span>
+                    </a>
+                    
+                    <a href="/tags/Typora/">
+                        <span class="chip bg-color">Typora</span>
+                    </a>
+                    
+                    <a href="/tags/PicGo/">
+                        <span class="chip bg-color">PicGo</span>
                     </a>
                     
                 </div>
@@ -734,7 +744,7 @@ git config user.email ‘你的邮箱’
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">305</span>
+                        class="white-color">415</span>
             
             
             
