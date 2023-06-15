@@ -4,17 +4,18 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="如何推送Hexo到GitHub, Kang-Blog">
-    <meta name="description" content="1、清除缓存hexo clean
+    <meta name="keywords" content="如何设置PDF默认显示方式, Kang-Blog">
+    <meta name="description" content="示例代码如下：
+//参数解释
+//默认以适合宽度显示
+//fitHeight:适合页面
+//fitWidth:适合宽度
+defaultScale: &#39;fitHeight&#39;
+//1以百分百显示
+defaultScale: 1,
 
 
-执行该命令后，会删除根目录下生成的public目录。
-
-
-2、生成静态页hexo g
-
-
-静态页面生成后默认会在项目目录下的public目录中，因为是静态页面，我们可以手动拿去部署在nginx等静态资源">
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -26,7 +27,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>如何推送Hexo到GitHub | Kang-Blog</title>
+    <title>如何设置PDF默认显示方式 | Kang-Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -270,12 +271,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">如何推送Hexo到GitHub</h1>
+                    <h1 class="description center-align post-title">如何设置PDF默认显示方式</h1>
                 </div>
             </div>
         </div>
@@ -299,9 +300,9 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Hexo/">
+                                <a href="/tags/WebSDK/">
                                     <span class="chip bg-color">
-                                        Hexo
+                                        WebSDK
                                     </span>
                                 </a>
                                 
@@ -313,8 +314,8 @@
                         <div class="post-cate">
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                                <a href="/categories/Hexo/" class="post-category">
-                                    Hexo
+                                <a href="/categories/WebSDK/" class="post-category">
+                                    WebSDK
                                 </a>
                                 
                         </div>
@@ -326,21 +327,21 @@
                 
                     <div class="post-date info-break-policy">
                         <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                            2023-06-13
+                            2023-06-15
                     </div>
                     
 
                         
                             <div class="post-date info-break-policy">
                                 <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                                    2023-06-13
+                                    2023-06-15
                             </div>
                             
 
                                 
                                     <div class="info-break-policy">
                                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                                            106
+                                            40
                                     </div>
                                     
 
@@ -368,22 +369,16 @@
 
                         <div class="card-content article-card-content">
                             <div id="articleContent">
-                                <h2 id="1、清除缓存"><a href="#1、清除缓存" class="headerlink" title="1、清除缓存"></a>1、清除缓存</h2><pre class="line-numbers language-shell"><code class="language-shell">hexo clean
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<ul>
-<li>执行该命令后，会删除根目录下生成的public目录。</li>
-</ul>
-<p><img src="D:/Company%20Documents/kang_yang/yk-blog/source/_posts/%E5%A6%82%E4%BD%95%E6%8E%A8%E9%80%81Hexo%E5%88%B0GitHub.assets/image-20230613211335270.png" alt="image-20230613211335270"></p>
-<h2 id="2、生成静态页"><a href="#2、生成静态页" class="headerlink" title="2、生成静态页"></a>2、生成静态页</h2><pre class="line-numbers language-shell"><code class="language-shell">hexo g
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<ul>
-<li>静态页面生成后默认会在项目目录下的public目录中，因为是静态页面，我们可以手动拿去部署在nginx等静态资源服务器上。</li>
-</ul>
-<h2 id="3、发布到GitHub"><a href="#3、发布到GitHub" class="headerlink" title="3、发布到GitHub"></a>3、发布到GitHub</h2><pre class="line-numbers language-shell"><code class="language-shell">hexo d
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<ul>
-<li>会推送项目目录下的public文件夹至GitHub仓库中。</li>
-</ul>
+                                <p><strong>示例代码如下：</strong></p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">//参数解释</span>
+<span class="token comment" spellcheck="true">//默认以适合宽度显示</span>
+<span class="token comment" spellcheck="true">//fitHeight:适合页面</span>
+<span class="token comment" spellcheck="true">//fitWidth:适合宽度</span>
+defaultScale<span class="token punctuation">:</span> <span class="token string">'fitHeight'</span>
+<span class="token comment" spellcheck="true">//1以百分百显示</span>
+defaultScale<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<img src="/2023/06/15/websdk/ru-he-she-zhi-pdf-mo-ren-xian-shi-fang-shi/image-20230111174443406.png" class="" title="image-20230111174443406">
 
                                     
                             </div>
@@ -410,7 +405,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://kang-yang.github.io/2023/06/13/hexo/ru-he-tui-song-hexo-dao-github/">https://kang-yang.github.io/2023/06/13/hexo/ru-he-tui-song-hexo-dao-github/</a>
+                    <a href="https://kang-yang.github.io/2023/06/15/websdk/ru-he-she-zhi-pdf-mo-ren-xian-shi-fang-shi/">https://kang-yang.github.io/2023/06/15/websdk/ru-he-she-zhi-pdf-mo-ren-xian-shi-fang-shi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -448,9 +443,9 @@
                                         
                                             <div class="article-tag">
                                                 
-                                                    <a href="/tags/Hexo/">
+                                                    <a href="/tags/WebSDK/">
                                                         <span class="chip bg-color">
-                                                            Hexo
+                                                            WebSDK
                                                         </span>
                                                     </a>
                                                     
@@ -498,13 +493,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/06/13/hexo/hexo-chang-yong-ming-ling/">
+                <a href="/2023/06/15/websdk/ru-he-guan-bi-dang-qian-da-kai-de-pdf-wen-dang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Hexo常用命令">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="如何关闭当前打开的PDF文档">
                         
-                        <span class="card-title">Hexo常用命令</span>
+                        <span class="card-title">如何关闭当前打开的PDF文档</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -515,14 +510,14 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-06-13
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-06-15
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Hexo/" class="post-category">
-                                    Hexo
+                            <a href="/categories/WebSDK/" class="post-category">
+                                    WebSDK
                                 </a>
                             
                             
@@ -532,8 +527,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
+                    <a href="/tags/WebSDK/">
+                        <span class="chip bg-color">WebSDK</span>
                     </a>
                     
                 </div>
@@ -544,16 +539,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/06/13/hexo/ru-he-tui-song-hexo-dao-github/">
+                <a href="/2023/06/15/websdk/ru-he-she-zhi-zhu-shi-zhong-de-xiang-pi-ca-da-xiao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="如何推送Hexo到GitHub">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="如何设置注释中的橡皮擦大小">
                         
-                        <span class="card-title">如何推送Hexo到GitHub</span>
+                        <span class="card-title">如何设置注释中的橡皮擦大小</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -564,26 +559,25 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-13
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-15
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Hexo/" class="post-category">
-                                    Hexo
+                            <a href="/categories/WebSDK/" class="post-category">
+                                    WebSDK
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
+                    <a href="/tags/WebSDK/">
+                        <span class="chip bg-color">WebSDK</span>
                     </a>
                     
                 </div>

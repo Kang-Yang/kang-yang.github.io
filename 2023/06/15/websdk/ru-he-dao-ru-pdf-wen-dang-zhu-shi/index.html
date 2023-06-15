@@ -4,17 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="如何推送Hexo到GitHub, Kang-Blog">
-    <meta name="description" content="1、清除缓存hexo clean
-
-
-执行该命令后，会删除根目录下生成的public目录。
-
-
-2、生成静态页hexo g
-
-
-静态页面生成后默认会在项目目录下的public目录中，因为是静态页面，我们可以手动拿去部署在nginx等静态资源">
+    <meta name="keywords" content="如何导入PDF文档注释, Kang-Blog">
+    <meta name="description" content="1、导入FDF注释//res.arrayBuffer()
+//arrayBuffer() 方法会返回一个promise，可以解决一个ArrayBuffer
+//res.blob()
+//blob() 方法将返回一个promise，使用一个B">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -26,7 +20,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>如何推送Hexo到GitHub | Kang-Blog</title>
+    <title>如何导入PDF文档注释 | Kang-Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -270,12 +264,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">如何推送Hexo到GitHub</h1>
+                    <h1 class="description center-align post-title">如何导入PDF文档注释</h1>
                 </div>
             </div>
         </div>
@@ -299,9 +293,9 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Hexo/">
+                                <a href="/tags/WebSDK/">
                                     <span class="chip bg-color">
-                                        Hexo
+                                        WebSDK
                                     </span>
                                 </a>
                                 
@@ -313,8 +307,8 @@
                         <div class="post-cate">
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                                <a href="/categories/Hexo/" class="post-category">
-                                    Hexo
+                                <a href="/categories/WebSDK/" class="post-category">
+                                    WebSDK
                                 </a>
                                 
                         </div>
@@ -326,21 +320,21 @@
                 
                     <div class="post-date info-break-policy">
                         <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                            2023-06-13
+                            2023-06-15
                     </div>
                     
 
                         
                             <div class="post-date info-break-policy">
                                 <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                                    2023-06-13
+                                    2023-06-15
                             </div>
                             
 
                                 
                                     <div class="info-break-policy">
                                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                                            106
+                                            177
                                     </div>
                                     
 
@@ -368,22 +362,37 @@
 
                         <div class="card-content article-card-content">
                             <div id="articleContent">
-                                <h2 id="1、清除缓存"><a href="#1、清除缓存" class="headerlink" title="1、清除缓存"></a>1、清除缓存</h2><pre class="line-numbers language-shell"><code class="language-shell">hexo clean
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<ul>
-<li>执行该命令后，会删除根目录下生成的public目录。</li>
-</ul>
-<p><img src="D:/Company%20Documents/kang_yang/yk-blog/source/_posts/%E5%A6%82%E4%BD%95%E6%8E%A8%E9%80%81Hexo%E5%88%B0GitHub.assets/image-20230613211335270.png" alt="image-20230613211335270"></p>
-<h2 id="2、生成静态页"><a href="#2、生成静态页" class="headerlink" title="2、生成静态页"></a>2、生成静态页</h2><pre class="line-numbers language-shell"><code class="language-shell">hexo g
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<ul>
-<li>静态页面生成后默认会在项目目录下的public目录中，因为是静态页面，我们可以手动拿去部署在nginx等静态资源服务器上。</li>
-</ul>
-<h2 id="3、发布到GitHub"><a href="#3、发布到GitHub" class="headerlink" title="3、发布到GitHub"></a>3、发布到GitHub</h2><pre class="line-numbers language-shell"><code class="language-shell">hexo d
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<ul>
-<li>会推送项目目录下的public文件夹至GitHub仓库中。</li>
-</ul>
+                                <h2 id="1、导入FDF注释"><a href="#1、导入FDF注释" class="headerlink" title="1、导入FDF注释"></a>1、导入FDF注释</h2><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">//res.arrayBuffer()</span>
+<span class="token comment" spellcheck="true">//arrayBuffer() 方法会返回一个promise，可以解决一个ArrayBuffer</span>
+<span class="token comment" spellcheck="true">//res.blob()</span>
+<span class="token comment" spellcheck="true">//blob() 方法将返回一个promise，使用一个Blob解决</span>
+<span class="token keyword">async</span> <span class="token keyword">function</span><span class="token function"> importFDFToDocument</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> pdfViewer <span class="token operator">=</span> <span class="token keyword">await</span> pdfui<span class="token punctuation">.</span><span class="token function">getPDFViewer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> pdfDoc <span class="token operator">=</span> pdfViewer<span class="token punctuation">.</span><span class="token function">getCurrentPDFDoc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> resp <span class="token operator">=</span> <span class="token keyword">await</span><span class="token function"> fetch</span><span class="token punctuation">(</span><span class="token string">'./fdf/annotations.fdf'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> file <span class="token operator">=</span> <span class="token keyword">await</span> resp<span class="token punctuation">.</span><span class="token function">blob</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">await</span> pdfDoc<span class="token punctuation">.</span><span class="token function">importAnnotsFromFDF</span><span class="token punctuation">(</span>file<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="2、导入Json注释"><a href="#2、导入Json注释" class="headerlink" title="2、导入Json注释"></a>2、导入Json注释</h2><p>参考代码：<a target="_blank" rel="noopener" href="https://jira.foxitsoftware.cn/browse/WEBPDF-9184">https://jira.foxitsoftware.cn/browse/WEBPDF-9184</a></p>
+<p>参考文档：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_40065776/article/details/104490792">https://blog.csdn.net/qq_40065776/article/details/104490792</a></p>
+<h3 id="2-1、第一种方式"><a href="#2-1、第一种方式" class="headerlink" title="2.1、第一种方式"></a>2.1、第一种方式</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">async</span> <span class="token keyword">function</span><span class="token function"> importJsonToDocument</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> pdfViewer <span class="token operator">=</span> <span class="token keyword">await</span> pdfui<span class="token punctuation">.</span><span class="token function">getPDFViewer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> pdfDoc <span class="token operator">=</span> pdfViewer<span class="token punctuation">.</span><span class="token function">getCurrentPDFDoc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    $<span class="token punctuation">.</span><span class="token function">getJSON</span><span class="token punctuation">(</span><span class="token string">'./fdf/save.json'</span><span class="token punctuation">,</span> data <span class="token operator">=</span><span class="token operator">></span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//console.log(data)</span>
+        pdfDoc<span class="token punctuation">.</span><span class="token function">importAnnotsFromJSON</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2-2、第二种方式"><a href="#2-2、第二种方式" class="headerlink" title="2.2、第二种方式"></a>2.2、第二种方式</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">async</span> <span class="token keyword">function</span><span class="token function"> importJsonToDocument</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> pdfViewer <span class="token operator">=</span> <span class="token keyword">await</span> pdfui<span class="token punctuation">.</span><span class="token function">getPDFViewer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> pdfDoc <span class="token operator">=</span> pdfViewer<span class="token punctuation">.</span><span class="token function">getCurrentPDFDoc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">fetch</span><span class="token punctuation">(</span><span class="token string">'./fdf/save.json'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span>json<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> pdfDoc<span class="token punctuation">.</span><span class="token function">importAnnotsFromJSON</span><span class="token punctuation">(</span>json<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
                                     
                             </div>
@@ -410,7 +419,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://kang-yang.github.io/2023/06/13/hexo/ru-he-tui-song-hexo-dao-github/">https://kang-yang.github.io/2023/06/13/hexo/ru-he-tui-song-hexo-dao-github/</a>
+                    <a href="https://kang-yang.github.io/2023/06/15/websdk/ru-he-dao-ru-pdf-wen-dang-zhu-shi/">https://kang-yang.github.io/2023/06/15/websdk/ru-he-dao-ru-pdf-wen-dang-zhu-shi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -448,9 +457,9 @@
                                         
                                             <div class="article-tag">
                                                 
-                                                    <a href="/tags/Hexo/">
+                                                    <a href="/tags/WebSDK/">
                                                         <span class="chip bg-color">
-                                                            Hexo
+                                                            WebSDK
                                                         </span>
                                                     </a>
                                                     
@@ -494,66 +503,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2023/06/13/hexo/hexo-chang-yong-ming-ling/">
+                <a href="/2023/06/15/websdk/ru-he-dao-ru-pdf-wen-dang-zhu-shi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Hexo常用命令">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="如何导入PDF文档注释">
                         
-                        <span class="card-title">Hexo常用命令</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-06-13
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Hexo/" class="post-category">
-                                    Hexo
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2023/06/13/hexo/ru-he-tui-song-hexo-dao-github/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="如何推送Hexo到GitHub">
-                        
-                        <span class="card-title">如何推送Hexo到GitHub</span>
+                        <span class="card-title">如何导入PDF文档注释</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -564,14 +525,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-13
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-15
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Hexo/" class="post-category">
-                                    Hexo
+                            <a href="/categories/WebSDK/" class="post-category">
+                                    WebSDK
                                 </a>
                             
                             
@@ -582,8 +543,57 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
+                    <a href="/tags/WebSDK/">
+                        <span class="chip bg-color">WebSDK</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/06/15/websdk/ru-he-dao-chu-pdf-wen-dang-zhu-shi/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="如何导出PDF文档注释">
+                        
+                        <span class="card-title">如何导出PDF文档注释</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-15
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/WebSDK/" class="post-category">
+                                    WebSDK
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/WebSDK/">
+                        <span class="chip bg-color">WebSDK</span>
                     </a>
                     
                 </div>
