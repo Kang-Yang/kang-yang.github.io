@@ -331,11 +331,11 @@
                 </a>
                 
                 
-                <a href="/categories/WebSDK/" title="WebSDK: 6">
+                <a href="/categories/WebSDK/" title="WebSDK: 13">
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
                             style="background-color: #D5F5E3;">WebSDK
-                        <span class="tag-length">6</span>
+                        <span class="tag-length">13</span>
                     </span>
                 </a>
                 
@@ -362,22 +362,22 @@
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2023/06/15/websdk/ru-he-dao-ru-pdf-wen-dang-zhu-shi/">
+                    <a href="/2023/06/15/websdk/ru-he-shan-chu-ce-bian-lan-zhu-shi-zhong-de-she-zhi-zhuang-tai-an-niu/">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="如何导入PDF文档注释">
+                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="如何删除侧边栏注释中的设置状态按钮">
                             
-                            <span class="card-title">如何导入PDF文档注释</span>
+                            <span class="card-title">如何删除侧边栏注释中的设置状态按钮</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                1、导入FDF注释//res.arrayBuffer()
-//arrayBuffer() 方法会返回一个promise，可以解决一个ArrayBuffer
-//res.blob()
-//blob() 方法将返回一个promise，使用一个B
+                                具体按钮如下：
+
+已知问题：回复的注释设置状态按钮未被删除
+解决方案pdfui.addUIEventListener(UIExtension.UIEvents.appendCommentListComment, card => &amp;#
                             
                         </div>
                         <div class="publish-info">
@@ -411,21 +411,20 @@
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2023/06/15/websdk/ru-he-dao-chu-pdf-wen-dang-zhu-shi/">
+                    <a href="/2023/06/15/websdk/ru-he-mo-ren-zhan-kai-zhu-shi-tab-cai-dan/">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="如何导出PDF文档注释">
+                            <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="如何默认展开注释tab菜单">
                             
-                            <span class="card-title">如何导出PDF文档注释</span>
+                            <span class="card-title">如何默认展开注释tab菜单</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                1、导出注释到 FDF// a.target = "_blank"; 在新的窗口打开超链接
-async function exportDocumentFDF() &amp;#123;
-    var pdfViewer = await pd
+                                1、文档渲染成功后，进行触发pdfui.getPDFViewer().then((pdfViewer) => &amp;#123;
+    pdfViewer.eventEmitter.on(Events.renderFileSuccess
                             
                         </div>
                         <div class="publish-info">
@@ -459,21 +458,122 @@ async function exportDocumentFDF() &amp;#123;
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2023/06/15/websdk/ru-he-guan-bi-dang-qian-da-kai-de-pdf-wen-dang/">
+                    <a href="/2023/06/15/websdk/ru-he-tong-guo-template-lai-yin-cang-cai-dan-huo-zhe-an-niu/">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="如何关闭当前打开的PDF文档">
+                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="如何通过 Template 来隐藏菜单或者按钮">
                             
-                            <span class="card-title">如何关闭当前打开的PDF文档</span>
+                            <span class="card-title">如何通过 Template 来隐藏菜单或者按钮</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                示例代码如下：
-var pdfViewer = await pdfui.getPDFViewer();
-pdfViewer.close();
+                                如何通过 Template 来隐藏菜单或者按钮visible 控制显示或隐藏
+&lt;group name="edit-group" visible="false">
+
+可参考：https://jira.foxitsoftware.cn/b
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-15
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/WebSDK/" class="post-category">
+                                    WebSDK
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/WebSDK/">
+                            <span class="chip bg-color">WebSDK</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2023/06/15/websdk/websdk-ji-cheng-dao-vue3-vite-xiang-mu-shang-jin-xing-lu-you-qie-huan-ye-mian-kong-zhi-tai-bao-cuo-duplicated-modular-name-thumbnail-it-must-be-unique/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="WebSDK集成到vue3+vite项目上进行路由切换页面，控制台报错 Duplicated Modular name: thumbnail it must be unique.">
+                            
+                            <span class="card-title">WebSDK集成到vue3+vite项目上进行路由切换页面，控制台报错 Duplicated Modular name: thumbnail it must be unique.</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                具体报错效果如下：
+
+
+
+解决方案//修改插件的导入方式，修改为如下：
+import AllUIXAddons from "@foxitsoftware/foxit-pdf-sdk-for-web-library/lib/uix-addon
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-15
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/WebSDK/" class="post-category">
+                                    WebSDK
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/WebSDK/">
+                            <span class="chip bg-color">WebSDK</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2023/06/15/websdk/ru-he-yin-cang-zhu-shi-ce-bian-lan-da-gou-biao-ji/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="如何隐藏注释侧边栏打勾标记">
+                            
+                            <span class="card-title">如何隐藏注释侧边栏打勾标记</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                通过CSS样式来隐藏注释侧边栏打勾标记.check-box-wrapper &#123;
+    display: none;
+&#125;
+
 
 
                             
@@ -509,134 +609,26 @@ pdfViewer.close();
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2023/06/15/websdk/ru-he-she-zhi-pdf-mo-ren-xian-shi-fang-shi/">
+                    <a href="/2023/06/15/websdk/ru-he-she-zhi-qian-bi-yan-shi-shi-jian/">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="如何设置PDF默认显示方式">
+                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="如何设置铅笔延时时间">
                             
-                            <span class="card-title">如何设置PDF默认显示方式</span>
+                            <span class="card-title">如何设置铅笔延时时间</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                示例代码如下：
-//参数解释
-//默认以适合宽度显示
-//fitHeight:适合页面
-//fitWidth:适合宽度
-defaultScale: 'fitHeight'
-//1以百分百显示
-defaultScale: 1,
-
-
-
+                                设置铅笔延时时间为1秒，默认3秒pdfui.getPDFViewer().then(function (pdfViewer) &amp;#123;
+    pdfViewer.setPencilDrawingTimeOut(1);
+&amp
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
                                 <i class="far fa-clock fa-fw icon-date"></i>2023-06-15
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/WebSDK/" class="post-category">
-                                    WebSDK
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/WebSDK/">
-                            <span class="chip bg-color">WebSDK</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2023/06/15/websdk/ru-he-she-zhi-zhu-shi-zhong-de-xiang-pi-ca-da-xiao/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="如何设置注释中的橡皮擦大小">
-                            
-                            <span class="card-title">如何设置注释中的橡皮擦大小</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                示例代码如下：
-pdfViewer.setEraserSize(50);
-
-
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-15
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/WebSDK/" class="post-category">
-                                    WebSDK
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/WebSDK/">
-                            <span class="chip bg-color">WebSDK</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2023/06/14/websdk/ru-he-xiu-gai-websdk-jie-mian-yu-yan/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="如何修改WebSDK界面语言">
-                            
-                            <span class="card-title">如何修改WebSDK界面语言</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                1、第一种方式（动态切换语言，比较简单）//设置UI界面语言
-//默认寻找的是路径是 \lib\locales
-pdfui.changeLanguage("zh-CN");
-
-2、第二种方式i18n: &amp;#123;
-    lng:
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-14
                             </span>
                             <span class="publish-author">
                                 
@@ -668,6 +660,30 @@ pdfui.changeLanguage("zh-CN");
 </main>
 
 
+<div class="container paging">
+    <div class="row">
+        <div class="col s6 m4 l4">
+            
+            <a class="left btn-floating btn-large disabled">
+                <i class="fas fa-angle-left"></i>
+            </a>
+            
+        </div>
+        <div class="page-info col m4 l4 hide-on-small-only">
+            <div class="center-align b-text-gray">1 / 3</div>
+        </div>
+        <div class="col s6 m4 l4">
+            
+            <a href="/categories/WebSDK/page/2/"
+               class="right btn-floating btn-large waves-effect waves-light bg-color">
+                <i class="fas fa-angle-right"></i>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+
 
 
     <footer class="page-footer bg-color">
@@ -687,7 +703,7 @@ pdfui.changeLanguage("zh-CN");
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">991</span>
+                        class="white-color">1.5k</span>
             
             
             
